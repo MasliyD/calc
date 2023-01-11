@@ -77,4 +77,14 @@ document.querySelector('.calc-buttons').onclick = (e) => {
         out.textContent = a;
         console.log(a, b, sign);
     }
+
+    if (key === '%') {
+        a = a / 100;
+        out.textContent = a;
+    }
+
+    if (key === '+/-') {
+        a = a * (-1);
+        out.textContent = a;
+    }
 };
